@@ -1,8 +1,10 @@
 .header {
-  background-color: $header_color;
-
-     .header_wrap{
-       @include flex(flex,row,space-between,center);
+     .header_top{
+        background-color: $header_color;
+        padding: 17px 0;
+          &_content{
+            @include flex(flex,row,space-between,center);
+          }
      }
     &_phones {
       @include flex(inline-flex, column, initial, initial);
@@ -11,13 +13,8 @@
       }
     }
     &_btn {
-        .btn.subscr{
-          @include btnSubcr();
-          padding: 5% 28%;
-         &:hover{
-           background-color: $yellow_btn-hover;
-           color:$white;
-         }
+        .btn{
+         padding: 10px 48px;
         }
     }
     &_schedule {
@@ -27,16 +24,74 @@
       }
     }
     &_socials {
-      display: flex;
-      .circle {
-
-        i {
+      .circle{
+           @include socialBtn(); 
+            i {
           color: $white;
           font-size: 24px;
-        }
+        } 
+        i.fa.fa-youtube{font-size: 18px;}
       }
+      .circle.telegram{ @include socialBtnIcon('\f3fe');}
+      .circle.facebook{ @include socialBtnIcon('\f39e');}
+      .circle.instagram{@include socialBtnIcon('\f16d');}
+      .circle.viber{@include socialBtnIcon('\f409');}
+     display: flex;
+     a{
+      margin-right: 8px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        background-color:$yellow_btn;
+      }
+     }   
     }
+    .header_bottom{
+       padding:44px 0;
+      .header_nav{
+         display: flex;
+         justify-content: space-between;
+        &_links{
+          @include text(14px,400,20px,$black,$ff-text);
+          text-transform: uppercase;
+        }
+      } 
+    }
+    .logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 37%;
+}
+}
+.hero{
+  padding-top: 50px;
+  height: calc(100vh - 190px);
+  &_content{
+    .wrap{
+      text-align: center;
+      width: 53%;
+      margin: 0 auto;
 
-
-
+    }
+    &_title{
+      padding: 50px 0;
+      @include text(96px,400,96px,$black2,$ff-title);
+      text-transform: uppercase;
+    }
+    &_text{
+      @include text(48px,400,54px,$black2,$ff-text);
+      padding-bottom:60px;
+    }
+    &_addr{
+      @include flex(flex,column,initial,initial);
+      span{@include text(18px,400,24px,$black2,$ff-text);}
+      .bold{@include text(24px,600,30px,$black2,$ff-text);}
+      padding-bottom:60px;
+    }
+    .btn{
+      padding: 7px 60px;
+    }
+  }
 }

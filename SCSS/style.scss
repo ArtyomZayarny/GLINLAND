@@ -5,8 +5,12 @@ body{
   margin: 0;
   padding: 0;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
+}
+input{
+	transition: all 0.3s ease;
 }
 ul{
   margin: 0;
@@ -14,13 +18,29 @@ ul{
 }
 ul li {list-style: none}
 a{
+	transition: all 0.3s ease;
   text-decoration: none;
 }
 .container{
-  max-width: 1180px;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.devider{
+	width:274px;
 }
 @import "variables";
 @import "mixins";
 @import "typography";
 @import "home";
+
+/*Common elements*/
+
+//YELLOW BUTTON SUBSCRIBE
+.btn.subscr{
+          @include btnSubcr();
+         &:hover{
+           background-color: $yellow_btn-hover;
+           color:$white;
+         }
+        }

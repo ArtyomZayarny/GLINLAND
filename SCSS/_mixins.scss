@@ -1,3 +1,4 @@
+/*Layout*/
 @mixin flex($flex,$direction,$justify,$align){
   display: $flex;
   flex-direction: $direction;
@@ -5,10 +6,19 @@
   align-items: $align;
 }
 
-@mixin header_phones($fz,$fw,$lh,$c,$ff:sans-serif){
+/*Text and Titles*/
+@mixin text($fz,$fw,$lh,$c,$ff:sans-serif){
   font-family:$ff;
   font-size: $fz;
   font-weight: $fw;
   line-height: $lh;
   color:$c;
+}
+
+/*Buttons*/
+@mixin btnSubcr(){
+  @include text(14px,400,20px,$black2,$ff-text);
+  background-color: $yellow_btn;
+  cursor: pointer;
+  border-radius: 50px;
 }

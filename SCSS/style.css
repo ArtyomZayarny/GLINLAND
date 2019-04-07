@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
 * {
   box-sizing: border-box; }
 
@@ -24,7 +25,13 @@ a {
   margin: 0 auto; }
 
 /*Colors*/
+/*Hover colors*/
 /*Font Family*/
+/*Layout*/
+/*Text and Titles*/
+/*Buttons*/
+/*Font for text*/
+/*Font for Titles*/
 .header {
   background-color: #C4C4C4; }
   .header .header_wrap {
@@ -38,8 +45,33 @@ a {
     justify-content: initial;
     align-items: initial; }
     .header_phones span {
-      font-family: Montserrat, sans-serif;
+      font-family: PT Sans, sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
-      color: #000; }
+      color: #fff; }
+  .header_btn .btn.subscr {
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #282828;
+    background-color: #FEDA03;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5% 28%; }
+    .header_btn .btn.subscr:hover {
+      background-color: #853D51;
+      color: #fff; }
+  .header_schedule span {
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    letter-spacing: 1px; }
+  .header_socials {
+    display: flex; }
+    .header_socials .circle i {
+      color: #fff;
+      font-size: 24px; }

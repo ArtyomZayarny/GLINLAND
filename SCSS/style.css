@@ -300,24 +300,50 @@ a {
 @media (max-width: 425px) {
   .header .header_top {
     max-height: 154px; }
+    .header .header_top_content {
+      grid-template-columns: 1fr 100px 1fr; }
+      .header .header_top_content .devider {
+        padding-top: 20px; }
+      .header .header_top_content .devider img {
+        width: 100px; }
+  .header_phones {
+    padding-bottom: 10px;
+    display: block;
+    margin-bottom: 0;
+    text-align: center; }
+    .header_phones span {
+      font-size: 11px;
+      line-height: 11px;
+      display: inline-block; }
+  .header_btn {
+    display: block;
+    font-size: 10px; }
+    .header_btn .btn {
+      padding: 3px 12px; }
+    .header_btn .btn.subscr {
+      font-size: 10px; }
+  .header_socials {
+    display: flex;
+    margin-bottom: 10px; }
+    .header_socials .circle {
+      width: inherit;
+      height: inherit;
+      border: unset;
+      font-size: 24px; }
+  .header_schedule {
+    display: block; }
+  .header .header_schedule span {
+    font-size: 11px; }
   .header .header_bottom {
     padding: 10px 5px; }
     .header .header_bottom .header_nav_links {
       font-size: 13px; }
     .header .header_bottom .header_nav {
-      grid-gap: 0 12px; }
+      grid-gap: 6px 12px; }
       .header .header_bottom .header_nav .time {
         justify-self: start; }
       .header .header_bottom .header_nav a.header_nav_links {
         justify-self: center; }
-  .header_phones {
-    display: none; }
-  .header_btn {
-    display: none; }
-  .header_schedule {
-    display: none; }
-  .header_socials {
-    display: none; }
 
   .hero {
     height: calc(100vh - 214px);
@@ -343,6 +369,32 @@ a {
           font-size: 16px;
           line-height: 18px; } }
 @media (max-width: 375px) {
+  .header_phones {
+    display: block;
+    margin-bottom: 0;
+    text-align: center; }
+    .header_phones span {
+      font-size: 8px;
+      line-height: 11px;
+      display: inline-block; }
+  .header .header_phones {
+    padding-bottom: 10px; }
+  .header_btn {
+    display: block;
+    font-size: 10px; }
+    .header_btn .btn {
+      padding: 3px 12px; }
+    .header_btn .btn.subscr {
+      font-size: 10px; }
+  .header_socials {
+    display: flex;
+    margin-bottom: 20px; }
+    .header_socials .circle {
+      font-size: 17px; }
+  .header_schedule {
+    display: block; }
+  .header .header_schedule span {
+    font-size: 8px; }
   .header .header_bottom .header_nav_links {
     font-size: 10px; } }
 /*Common elements*/

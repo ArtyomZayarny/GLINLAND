@@ -205,7 +205,6 @@
         }
       }
     }
-  
   .logo{display: none;}
   &_phones{margin-bottom: 10px;align-self: end}
   &_btn{align-self: start;}
@@ -219,17 +218,58 @@
   }
 }
 }
-
-
-
 @media(max-width: 425px){
   .header{
     .header_top{
           max-height: 154px;
       &_content{
-
+        grid-template-columns: 1fr 100px 1fr;
+      .devider {
+        padding-top: 20px;
+      }
+      .devider img{
+          width: 100px;
+        }
       }
 
+    }
+    &_phones{
+      padding-bottom: 10px;
+      display: block;
+      margin-bottom: 0;
+      text-align: center;
+      span{
+        font-size: 11px;
+        line-height: 11px;
+        display: inline-block;
+      }
+    }
+    &_btn{
+      display: block;
+      font-size: 10px;
+      .btn{
+        padding: 3px 12px;
+
+      }
+      .btn.subscr {
+        font-size: 10px;
+      }
+    }
+    &_socials{
+      display: flex;
+      margin-bottom: 10px;
+      .circle{
+        width: inherit;
+        height: inherit;
+        border: unset;
+        font-size: 24px;
+      }
+    }
+    &_schedule{
+      display: block;
+    }
+    .header_schedule span{
+      font-size: 11px;
     }
     .header_bottom{
           padding: 10px 5px;
@@ -237,7 +277,7 @@
             font-size: 13px;
           }
           .header_nav{
-             grid-gap: 0 12px;
+             grid-gap: 6px 12px;
           .time{justify-self:start;}
             a.header_nav_links{
               justify-self: center;
@@ -245,13 +285,6 @@
         }
 
     }
-
-    
-    &_phones{display: none;}
-    &_btn{display: none;}
-    &_schedule{display: none;}
-    &_socials{display: none;}
-
   }
   .hero{
     height: calc(100vh - 214px);
@@ -286,7 +319,43 @@
 }
 @media(max-width:375px){
   .header{
+    &_phones{
+      display: block;
+      margin-bottom: 0;
+     text-align: center;
+      span{
+        font-size: 8px;
+        line-height: 11px;
+        display: inline-block;
+      }
+    }
+    .header_phones{
+      padding-bottom: 10px;
+    }
+    &_btn{
+      display: block;
+      font-size: 10px;
+      .btn{
+        padding: 3px 12px;
 
+      }
+      .btn.subscr {
+        font-size: 10px;
+      }
+    }
+    &_socials{
+      display: flex;
+      margin-bottom: 20px;
+      .circle{
+        font-size: 17px;
+      }
+    }
+    &_schedule{
+      display: block;
+    }
+    .header_schedule span{
+      font-size: 8px;
+    }
      .header_bottom {
        .header_nav{
        &_links {
@@ -296,4 +365,9 @@
     }
   }
 
+}
+@media(max-width:320px){
+  .header{
+
+  }
 }

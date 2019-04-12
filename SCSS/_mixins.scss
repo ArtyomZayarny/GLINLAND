@@ -34,8 +34,8 @@
             }
 }
 /*Buttons*/
-@mixin btnSubcr(){
-  @include text(14px,400,20px,$black2,$ff-text);
+@mixin btnSubcr($fz){
+  @include text($fz,400,20px,$black2,$ff-text);
   display: inline-block;
   background-color: $yellow_btn;
   cursor: pointer;

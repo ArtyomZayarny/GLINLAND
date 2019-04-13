@@ -72,7 +72,7 @@
 }
 .hero{
   padding-top: 50px;
-  height: calc(100vh - 190px);
+  /*height: calc(100vh - 190px);*/
   &_content{
     .wrap{
       text-align: center;
@@ -100,6 +100,15 @@
     .btn{
       padding: 7px 60px;
     }
+  }
+}
+.events{
+  &_title{
+    @include text(24px,700,25px,$blueTitle,$ff-title);
+    text-transform: uppercase;
+  }
+  &_silder{
+
   }
 }
 
@@ -143,7 +152,6 @@
   }
 }
 }
-
 @media(max-width: 992px){
   .header{
     .header_bottom{

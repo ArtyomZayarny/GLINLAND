@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  max-width:100%;
+  height: auto;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p,span,h1,h2,h3,h4,h5,h6,
+nav a,a.btn{
+  letter-spacing: 2px;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+input{
+  transition: all 0.3s ease;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li {list-style: none}
+a{
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.devider{
+  width:274px;
+}
+
+/***** COMPONENTS ****/
+
+
+//YELLOW BUTTON SUBSCRIBE
+.btn.subscr{
+  @include btnSubcr(14px);
+  &:hover{
+    background-color: $yellow_btn-hover;
+    color:$white;
+  }
+}
+
+/*  EVENT SLIDER */
+
+
+

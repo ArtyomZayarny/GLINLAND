@@ -1,8 +1,19 @@
 @charset "UTF-8";
+/*Colors*/
+/*Hover colors*/
+/*Font Family*/
+/*Layout*/
+/*Text and Titles*/
+/* Socials buttons*/
+/*Buttons*/
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
 * {
   box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 body {
   margin: 0;
@@ -37,13 +48,29 @@ a {
 .devider {
   width: 274px; }
 
-/*Colors*/
-/*Hover colors*/
-/*Font Family*/
-/*Layout*/
-/*Text and Titles*/
-/* Socials buttons*/
-/*Buttons*/
+/***** COMPONENTS ****/
+.btn.subscr {
+  font-family: PT Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #282828;
+  display: inline-block;
+  background-color: #FEDA03;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25); }
+  .btn.subscr:hover {
+    background-color: #853D51;
+    color: #fff; }
+
+/*  EVENT SLIDER */
+.slider_item.slick-slide.slick-current.slick-active {
+  padding: 0 20vw; }
+
+.slider_item.slick-slide.slick-current.slick-active a {
+  margin-right: 30px; }
+
 /*Font for text*/
 /*Font for Titles*/
 .header .header_top {
@@ -134,7 +161,7 @@ a {
 
 .hero {
   padding-top: 50px;
-  height: calc(100vh - 190px); }
+  /*height: calc(100vh - 190px);*/ }
   .hero_content .wrap {
     text-align: center;
     width: 53%;
@@ -176,6 +203,14 @@ a {
       color: #282828; }
   .hero_content .btn {
     padding: 7px 60px; }
+
+.events_title {
+  font-family: PT Mono, monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #7691B9;
+  text-transform: uppercase; }
 
 @media (max-width: 1200px) {
   .header {
@@ -397,18 +432,5 @@ a {
     font-size: 8px; }
   .header .header_bottom .header_nav_links {
     font-size: 10px; } }
-/*Common elements*/
-.btn.subscr {
-  font-family: PT Sans, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #282828;
-  display: inline-block;
-  background-color: #FEDA03;
-  cursor: pointer;
-  border-radius: 50px;
-  box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25); }
-  .btn.subscr:hover {
-    background-color: #853D51;
-    color: #fff; }
+.slider_item a {
+  display: inline-block; }

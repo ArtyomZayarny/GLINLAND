@@ -28,6 +28,9 @@ a{
   transition: all 0.3s ease;
   text-decoration: none;
 }
+section{
+  padding:40px 0;
+}
 .container{
   width: 100%;
   margin: 0 auto;
@@ -36,7 +39,28 @@ a{
 .devider{
   width:274px;
 }
-
+@media(max-width: 1200px){
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header_bottom.sticky{
+  background: #C4C4C4;
+}
+.header .header_bottom.sticky .header_nav_links{
+  color:#fff;
+}
+.header .logo.stuck {
+  position: fixed;
+  width: 200px;
+  left: calc(100% - 189px - 41%);
+}
 /***** COMPONENTS ****/
 
 

@@ -74,8 +74,8 @@ a {
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
-  /* <-- Вот этот символ */
+  content: 'тАв';
+  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
   text-align: center;
   opacity: .25;
   color: black;

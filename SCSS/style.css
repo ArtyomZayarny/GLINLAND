@@ -65,11 +65,22 @@ a {
     color: #fff; }
 
 /*  EVENT SLIDER */
-.slider_item.slick-slide.slick-current.slick-active {
-  padding: 0 20vw; }
-
-.slider_item.slick-slide.slick-current.slick-active a {
-  margin-right: 30px; }
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  /* <-- Вот этот символ */
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /*Font for text*/
 /*Font for Titles*/

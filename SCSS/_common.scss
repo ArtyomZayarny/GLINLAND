@@ -49,6 +49,7 @@ section{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 .header_bottom.sticky{
   background: #C4C4C4;
@@ -59,7 +60,13 @@ section{
 .header .logo.stuck {
   position: fixed;
   width: 200px;
-  left: calc(100% - 189px - 41%);
+  left: calc(100% - 57%);
+  z-index: 2;
+}
+@media(max-width: 1024px){
+  .header .logo.stuck {
+    left: calc(100% - 61%);
+  }
 }
 /***** COMPONENTS ****/
 

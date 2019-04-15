@@ -155,6 +155,93 @@
     }
 }
 
+.studio-master{
+  padding: 40px 0;
+  &-box{
+    display: flex;
+
+    .box{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+      .handmade{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        &:before{
+            content: "";
+            width: 60px;
+            height: 56px;
+            background: url("../IMG/prev_arrow.png")no-repeat center;
+            background-size: cover;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            bottom:0;
+          transform: rotate(-25deg);
+        }
+      }
+      .masters{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        &:after{
+          content: "";
+          width: 60px;
+          height: 56px;
+          background: url("../IMG/next_arrow.png")no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+          position: absolute;
+          bottom:0;
+          transform: rotate(25deg);
+        }
+      }
+      span{
+        @include text(36px,400,42px,$black2,$ff-decor);
+        display: block;
+        text-align: center;
+        position: relative;
+        padding-bottom:60px;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      &-item{
+        height: 420px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        &:after{
+          content:'';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: rgba(133, 61, 81, 0.5);
+          z-index: -1;
+        }
+        h4 {
+          padding-bottom: 50px;
+          @include text(24px, 700, 25px, $white, $ff-title);
+        }
+        a{
+          padding: 4px 24px;
+        }
+      }
+    }
+  }
+
+
+}
+
 @media(max-width: 1200px){
   .header{
     width: 100%;
@@ -223,6 +310,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap:15px;
   }
+  .studio-master{
+    &-box{
+      .handmade, .masters{
+        span{
+          font-size: 29px;
+        }
+      }
+    }
+  }
 }
 @media(max-width: 768px){
 .header{
@@ -284,6 +380,31 @@
       padding: 60px;
     }
   }
+  .studio-master {
+    &-box {
+      .box {
+        margin-right: 15px;
+        .handmade {
+          span {
+            padding-bottom: 15px;
+            font-size: 21px;
+          }
+          &:before {
+            display: none;
+          }
+        }
+        .masters {
+          span {
+            padding-bottom: 15px;
+            font-size: 21px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 @media(max-width: 575px){
   .hero{
@@ -298,6 +419,32 @@
   .reasons{
     &_block{
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .studio-master{
+    padding: 15px 0;
+    &-box{
+      flex-wrap: wrap;
+      .box{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .handmade{
+          margin-bottom: 0;
+          span{
+            font-size: 32px;
+          }
+        }
+        .masters{
+          margin-bottom: 0;
+          span{
+            font-size: 32px;
+          }
+        }
+      }
     }
   }
 }
@@ -398,6 +545,22 @@
       }
     }
   }
+  .studio-master{
+    &-box{
+      .box{
+        .handmade{
+          span{
+            font-size: 29px;
+          }
+        }
+        .masters{
+          span{
+            font-size: 29px;
+          }
+        }
+      }
+    }
+  }
 }
 @media(max-width:375px){
   .header{
@@ -444,6 +607,22 @@
          font-size: 10px;
        }
      }
+    }
+  }
+  .studio-master{
+    &-box{
+      .box{
+        .handmade{
+          span{
+            font-size: 23px;
+          }
+        }
+        .masters{
+          span{
+            font-size: 23px;
+          }
+        }
+      }
     }
   }
 

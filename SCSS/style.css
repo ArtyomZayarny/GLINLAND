@@ -8,6 +8,7 @@
 /*Buttons*/
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic");
 * {
   box-sizing: border-box; }
 
@@ -58,7 +59,8 @@ section {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
 
 .header_bottom.sticky {
   background: #C4C4C4; }
@@ -69,8 +71,12 @@ section {
 .header .logo.stuck {
   position: fixed;
   width: 200px;
-  left: calc(100% - 189px - 41%); }
+  left: calc(100% - 57%);
+  z-index: 2; }
 
+@media (max-width: 1024px) {
+  .header .logo.stuck {
+    left: calc(100% - 61%); } }
 /***** COMPONENTS ****/
 .btn.subscr {
   font-family: PT Sans, sans-serif;
@@ -107,6 +113,7 @@ section {
 
 /*Font for text*/
 /*Font for Titles*/
+/* Decor font handwritting*/
 .header .header_top {
   background-color: #C4C4C4;
   padding: 17px 0; }
@@ -290,6 +297,85 @@ section {
     color: #282828;
     padding: 90px; }
 
+.studio-master {
+  padding: 40px 0; }
+  .studio-master-box {
+    display: flex; }
+    .studio-master-box .box {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px; }
+      .studio-master-box .box .handmade {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px; }
+        .studio-master-box .box .handmade:before {
+          content: "";
+          width: 60px;
+          height: 56px;
+          background: url("../IMG/prev_arrow.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 0;
+          transform: rotate(-25deg); }
+      .studio-master-box .box .masters {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px; }
+        .studio-master-box .box .masters:after {
+          content: "";
+          width: 60px;
+          height: 56px;
+          background: url("../IMG/next_arrow.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 0;
+          transform: rotate(25deg); }
+      .studio-master-box .box span {
+        font-family: Marck Script, cursive;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 42px;
+        color: #282828;
+        display: block;
+        text-align: center;
+        position: relative;
+        padding-bottom: 60px; }
+      .studio-master-box .box:last-child {
+        margin-right: 0; }
+      .studio-master-box .box-item {
+        height: 420px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        z-index: 1; }
+        .studio-master-box .box-item:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: rgba(133, 61, 81, 0.5);
+          z-index: -1; }
+        .studio-master-box .box-item h4 {
+          padding-bottom: 50px;
+          font-family: PT Mono, monospace;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 25px;
+          color: #fff; }
+        .studio-master-box .box-item a {
+          padding: 4px 24px; }
+
 @media (max-width: 1200px) {
   .header {
     width: 100%; }
@@ -354,7 +440,10 @@ section {
 
   .reasons_block {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px; } }
+    grid-gap: 15px; }
+
+  .studio-master-box .handmade span, .studio-master-box .masters span {
+    font-size: 29px; } }
 @media (max-width: 768px) {
   .header .header_top {
     max-height: 176px;
@@ -422,7 +511,20 @@ section {
     height: 300px; }
     .banner-block_text {
       width: 100%;
-      padding: 60px; } }
+      padding: 60px; }
+
+  .studio-master-box .box {
+    margin-right: 15px; }
+    .studio-master-box .box .handmade span {
+      padding-bottom: 15px;
+      font-size: 21px; }
+    .studio-master-box .box .handmade:before {
+      display: none; }
+    .studio-master-box .box .masters span {
+      padding-bottom: 15px;
+      font-size: 21px; }
+    .studio-master-box .box .masters:after {
+      display: none; } }
 @media (max-width: 575px) {
   .banner-block {
     height: auto; }
@@ -430,7 +532,26 @@ section {
       padding: 20px; }
 
   .reasons_block {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .studio-master {
+    padding: 15px 0; }
+    .studio-master-box {
+      flex-wrap: wrap; }
+      .studio-master-box .box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px; }
+        .studio-master-box .box:last-child {
+          margin-bottom: 0; }
+        .studio-master-box .box .handmade {
+          margin-bottom: 0; }
+          .studio-master-box .box .handmade span {
+            font-size: 32px; }
+        .studio-master-box .box .masters {
+          margin-bottom: 0; }
+          .studio-master-box .box .masters span {
+            font-size: 32px; } }
 @media (max-width: 425px) {
   .header .header_top {
     max-height: 154px; }
@@ -500,7 +621,12 @@ section {
         padding-bottom: 30px; }
         .hero_content_addr span, .hero_content_addr span.bold {
           font-size: 16px;
-          line-height: 18px; } }
+          line-height: 18px; }
+
+  .studio-master-box .box .handmade span {
+    font-size: 29px; }
+  .studio-master-box .box .masters span {
+    font-size: 29px; } }
 @media (max-width: 375px) {
   .header_phones {
     display: block;
@@ -529,6 +655,11 @@ section {
   .header .header_schedule span {
     font-size: 8px; }
   .header .header_bottom .header_nav_links {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  .studio-master-box .box .handmade span {
+    font-size: 23px; }
+  .studio-master-box .box .masters span {
+    font-size: 23px; } }
 .slider_item a {
   display: inline-block; }

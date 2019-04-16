@@ -67,7 +67,7 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 37%;
+      left: calc(100% - 62%);
 }
 }
 .hero{
@@ -154,7 +154,6 @@
       padding: 90px;
     }
 }
-
 .studio-master{
   padding: 40px 0;
   &-box{
@@ -242,26 +241,139 @@
 
 }
 .studio{
-
+  &_title{
+    h3{
+      @include text(24px,700,25px,$blueTitle,$ff-title);
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+    h4{
+      @include text(36px,400,42px,$blueTitle,$ff-title);
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+  }
   &_slider{
-
+    max-width: 100%;
     &_item{
-    width: 371px;
+    width: 365px;
     display: flex;
     flex-wrap: wrap;
+      padding-bottom: 35px;
+      box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+
      &_img{
       padding-bottom:34px
      }
       &_text{
         padding:0 15px;
+        min-height: 246px;
+
         h5{
+          @include text(14px,700,21px,$black2,$ff-text);
           padding-bottom:17px
         }
+
       }
       .btn-area{
-
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+         .program{
+           padding: 5px 8px;
+         }
+        .subscr{
+          padding: 4px 33px;
+          color: $bordo_btn;
+          box-shadow: unset;
+          &:hover{
+            color:$yellow_btn;
+          }
+        }
       }
 
+    }
+  }
+}
+.additional{
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  &_title {
+    h3 {
+      @include text(36px, 400, 42px, $blueTitle, $ff-title);
+      padding-bottom: 25px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &_desc{
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 31px;
+  }
+  &_warrning{
+    display: flex;
+    padding-bottom: 41px;
+    p{
+      @include text(14px,400,21px,$black2,$ff-title);
+      padding-left: 25px;
+
+    }
+    span{
+      font-family: $ff-text;
+      font-weight: 700;
+      color:$warrning;
+    }
+  }
+  &_slider{
+
+    &_item{
+
+     height: 591px;
+    &-wrap{
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+     &-content {
+       width: 770px;
+       margin: 0 auto;
+       .btn-area{
+         padding-top: 35px;
+         display: flex;
+         justify-content: center;
+       }
+       .btn.subscr{
+         background-color: $bordo_btn;
+         color:$white;
+         transition: all .3s ease;
+         padding: 11px 49px;
+         &:hover{
+            background-color: $white;
+           color:$bordo_btn;
+         }
+       }
+     }
+      &-text {
+        padding: 40px 70px;
+        text-align: center;
+        box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+        background-color: rgba(118, 145, 185, 0.5);
+        h4 {
+          @include text(24px, 700, 28px, $white, $ff-title);
+          padding-bottom: 18px;
+        }
+        p {
+          @include text(18px, 400, 21px, $white, $ff-text);
+        }
+      }
     }
   }
 }

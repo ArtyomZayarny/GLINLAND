@@ -69,6 +69,23 @@ section{
   }
 }
 /***** COMPONENTS ****/
+.btn.program {
+  @include text(14px, 400, 16px, $bordo_btn, $ff-text);
+  display: inline-block;
+  border: 1px solid $bordo_btn;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  transition: all .3s ease;
+}
+.btn.program:hover{
+  color:#fff;
+  background-color: $bordo_btn;
+}
+p{
+  @include text(14px,400,16px,$black2,$ff-title);
+}
 
 
 //YELLOW BUTTON SUBSCRIBE

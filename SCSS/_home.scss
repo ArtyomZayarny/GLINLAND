@@ -241,6 +241,30 @@
 
 
 }
+.studio{
+
+  &_slider{
+
+    &_item{
+    width: 371px;
+    display: flex;
+    flex-wrap: wrap;
+     &_img{
+      padding-bottom:34px
+     }
+      &_text{
+        padding:0 15px;
+        h5{
+          padding-bottom:17px
+        }
+      }
+      .btn-area{
+
+      }
+
+    }
+  }
+}
 
 @media(max-width: 1200px){
   .header{

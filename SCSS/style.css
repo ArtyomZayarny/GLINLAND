@@ -103,8 +103,8 @@ section {
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
-  /* <-- Вот этот символ */
+  content: 'тАв';
+  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -375,6 +375,17 @@ section {
           color: #fff; }
         .studio-master-box .box-item a {
           padding: 4px 24px; }
+
+.studio_slider_item {
+  width: 371px;
+  display: flex;
+  flex-wrap: wrap; }
+  .studio_slider_item_img {
+    padding-bottom: 34px; }
+  .studio_slider_item_text {
+    padding: 0 15px; }
+    .studio_slider_item_text h5 {
+      padding-bottom: 17px; }
 
 @media (max-width: 1200px) {
   .header {
@@ -663,3 +674,5 @@ section {
     font-size: 23px; } }
 .slider_item a {
   display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

@@ -57,3 +57,14 @@ transition: all .3s ease;
   color:#fff;
 }
 }
+
+//Prods buy btn
+@mixin prodsBtn($btnColor){
+  @include text(14px,400,20px,$white,$ff-text);
+  background-color: $btnColor;
+  padding: 8px 21px;
+  transition:all .3s ease ;
+  &:hover{
+    background-color: lighten($btnColor,25%);
+  }
+}

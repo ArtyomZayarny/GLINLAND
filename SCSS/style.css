@@ -525,6 +525,80 @@ p {
       line-height: 21px;
       color: #fff; }
 
+.prods {
+  padding: 40px 0; }
+  .prods_title {
+    text-align: center;
+    padding-bottom: 40px; }
+    .prods_title h4 {
+      font-family: PT Mono, monospace;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      color: #7691B9;
+      text-transform: uppercase; }
+  .prods_slider_item {
+    max-width: 370px;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+    padding-bottom: 27px;
+    padding-top: 32px; }
+    .prods_slider_item_action {
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between; }
+      .prods_slider_item_action .buy-btn a {
+        font-family: PT Sans, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #fff;
+        background-color: #ff6b00;
+        padding: 8px 21px;
+        transition: all 0.3s ease;
+        border-radius: 0 50px 50px 0; }
+        .prods_slider_item_action .buy-btn a:hover {
+          background-color: #ffb580; }
+      .prods_slider_item_action .price span {
+        font-family: PT Sans, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #ff6b00; }
+      .prods_slider_item_action .more a {
+        font-family: PT Sans, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #fff;
+        background-color: #000;
+        padding: 8px 21px;
+        transition: all 0.3s ease;
+        border-radius: 50px 0 0 50px; }
+        .prods_slider_item_action .more a:hover {
+          background-color: #404040; }
+  .prods .order_new h4 {
+    padding: 40px 0;
+    font-family: PT Mono, monospace;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #7691B9;
+    text-transform: uppercase;
+    text-align: center; }
+  .prods .order_new form.order-request {
+    display: flex; }
+    .prods .order_new form.order-request input {
+      padding: 9px 18px;
+      outline: none;
+      font-family: PT Sans, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #C4C4C4; }
+      .prods .order_new form.order-request input[name="name"] {
+        border-radius: 50px 0 0 50px;
+        border: 1px solid #C4C4C4; }
+
 @media (max-width: 1200px) {
   .header {
     width: 100%; }

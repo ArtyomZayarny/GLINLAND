@@ -112,7 +112,6 @@
   }
 }
 .reasons{
-
   &_title{
     h3{
       @include text(24px,700,25px,$blueTitle,$ff-title);
@@ -376,6 +375,68 @@
       }
     }
   }
+}
+.prods{
+  padding: 40px 0;
+  &_title{
+    text-align: center;
+    padding-bottom: 40px;
+    h4{
+      @include text(36px,400,42px,$blueTitle,$ff-title);
+      text-transform: uppercase;
+    }
+  }
+  &_slider{
+    &_item{
+      max-width: 370px;
+      box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+      padding-bottom: 27px;
+      padding-top: 32px;
+      &_action{
+        display: flex;
+        margin-top:20px;
+        justify-content: space-between;
+        .buy-btn{
+          a{
+             @include prodsBtn($warrning);
+              border-radius: 0 50px 50px 0;
+          }
+        }
+        .price{
+          span{
+            @include text(24px,400,30px,$warrning,$ff-text);
+          }
+        }
+        .more{
+          a{
+            @include prodsBtn($black);
+            border-radius: 50px 0 0 50px;
+          }
+        }
+      }
+    }
+  }
+  .order_new{
+    h4{
+      padding: 40px 0;
+      @include text(36px,400,42px,$blueTitle,$ff-title);
+      text-transform: uppercase;
+      text-align: center;
+    }
+    form.order-request {
+      display: flex;
+      input{
+        padding: 9px 18px;
+        outline: none;
+        @include text(14px,400,20px,$header_color,$ff-text);
+        &[name="name"]{
+         border-radius: 50px 0 0 50px;
+          border:1px solid $header_color
+        }
+      }
+    }
+  }
+
 }
 
 @media(max-width: 1200px){

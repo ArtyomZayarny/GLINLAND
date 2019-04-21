@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Slick Slider -->
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+
+    <!-- jQuery Ui css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="SCSS/lightbox.min.css">
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+
     <!-- Main styles -->
     <link rel="stylesheet" href="SCSS/style.css">
+    <link rel="stylesheet" href="SCSS/main_sectin.css">
 </head>
 <body>
 <header class="header">
@@ -402,6 +408,47 @@
 
     </div>
 </section>
+<section class="page1">
+    <div class="container">
+        <div class="header">
+            <h3>Мастерская</h3>
+            <h2>Наши мастера не только учат, но и создают!</h2>
+            <p>Любые вашы идеи могут быть реализованы, не сомневайтесь!</p>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="IMG/1.jpg">
+                </div>
+                <div class="gallery-text">
+                    <p>Мечтаете об уникальном семейном сервизе?! Пожалуйста!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="IMG/2.jpg">
+                </div>
+                <div class="gallery-text">
+                    <p>Хотите красивейшие подсвечники в гостинную?! Не проблема!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="IMG/3.jpg">
+                </div>
+                <div class="gallery-text">
+                    <p>Задумались о статуе любимого дедушки в полный рост?! И это возможно!</p>
+                </div>
+            </div>
+        </div>
+        <div class="float">
+            <h4>Приходите! С нами можно реализовать любые, даже самые смелые мечты!</h4>
+        </div>
+        <div class="btn-area">
+            <a href="#">Перейти в Мастерскую</a>
+        </div>
+    </div>
+</section>
 <section class="prods">
     <div class="container">
         <div class="prods_title">
@@ -422,19 +469,112 @@
         <div class="order_new">
             <h4>ИЛИ ЗАКАЖИТЕ НОВОЕ</h4>
             <form action="" class="order-request">
-                <p><input name="name" type="text" placeholder="Имя"/></p>
-                <p><input name="email" type="text" placeholder="E-mail"/></p>
-                <p><input name="phone" type="text" placeholder="+3 8 (000) 000 00 00"/></p>
-                <p><input type="submit" value="Заказать"/></p>
+                <p><input name="name" type="text" placeholder="Имя" required/></p>
+                <p><input name="email" type="email" placeholder="E-mail" required/></p>
+                <p><input name="phone" type="text" placeholder="+3 8 (000) 000 00 00" required/></p>
+                <p><input class="submit-btn" type="submit" value="Заказать"/></p>
             </form>
         </div>
     </div>
 </section>
 
+<!-- test code -->
+
+<section class="section2">
+    <div class="header">
+        <h2>Работы наших студентов</h2>
+    </div>
+    <div class="main">
+        <div class="gallery">
+            <div><span><a href="IMG/pic2-small.png" data-lightbox="mygallery"><img src="IMG/pic1-small.png"></a></span></div>
+            <div><span><a href="IMG/gal_2.png" data-lightbox="mygallery"><img src="IMG/gal_2.png"></a></span></div>
+            <div><span><a href="IMG/pic3-small.png" data-lightbox="mygallery"><img src="IMG/pic3-small.png"></a></span></div>
+            <div><span><a href="IMG/pic4-small.png" data-lightbox="mygallery"><img src="IMG/pic4-small.png"></a></span></div>
+            <div><span><a href="IMG/pic5-small.png" data-lightbox="mygallery"><img src="IMG/pic5-small.png"></a></span></div>
+            <div><span><a href="IMG/pic6-small.png" data-lightbox="mygallery"><img src="IMG/pic6-small.png"></a></span></div>
+            <div><span><a href="IMG/pic7-small.png" data-lightbox="mygallery"><img src="IMG/pic7-small.png"></a></span></div>
+            <div><span><a href="IMG/pic8-small.png" data-lightbox="mygallery"><img src="IMG/pic8-small.png"></a></span></div>
+            <div><span><a href="IMG/pic9-small.png" data-lightbox="mygallery"><img src="IMG/pic9-small.png"></a></span></div>
+            <div><span><a href="IMG/pic10-small.png" data-lightbox="mygallery"><img src="IMG/pic10-small.png"></a></span></div>
+        </div>
+    </div>
+    <div class="float">
+        <p><input class="stymit" type="submit" value="Перейти в галерею"></p>
+    </div>
+</section>
+<section class="section3">
+    <div class="container">
+        <div class="header">
+            <h2>Запишитесь</h2>
+            <h2>и получайте удовольствие от занятий вместе с нами</h2>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <img class="shadow" src="IMG/photo.jpg"/>
+            </div>
+            <div class="main2">
+                <form>
+                    <p>Как Вас зовут?</p>
+                    <p class="stinput"><input type="text" placeholder="Алиса"></p>
+                    <p>По какому номеру можно с Вами связаться</p>
+                    <p class="stinput"><input type="text" placeholder="+38 (000) 000 00 00"></p>
+                    <p>Что вас интересует?</p>
+                    <p class="stinput">
+                        <select>
+                            <option value="Курс групповых зянятй" selected>Курс групповых зянятй</option>
+                            <option  value="HHH">HHH</option>
+                            <option value="PPP">PPP</option>
+                            <option value="SSS">SSS</option>
+                        </select>
+                    </p>
+                    <p>Выберите день из расписания:</p>
+                    <div class="obb">
+                        <p class="stinput klas"><input class="calendar" type="text" id="datepicker" placeholder="Понедельник 30 Марта 2012г."></p>
+                    </div>
+                    <p><input class="stymit" type="submit" value="Записаться"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--<p>Date: <input type="text" id="datepicker"></p>-->
+</section>
+<!--
+<div class="footer">
+    <div class="block1">
+        <h2>Glinland 2019 Сделано в CtrlA</h2>
+    </div>
+    <div class="block2">
+        <div class="text-block">
+            <h2>+38 093 030 12 00</h2>
+            <h2>л. Ак.Сахарова, 36 (Изумрудный город)</h2>
+        </div>
+        <div class="pic">
+            <img src="IMG/logo2.png">
+        </div>
+    </div>
+    <div class="block3">
+        <div class="pic2">
+            <h2>Условия сотрудничества</h2>
+            <div class="images">
+                <img src="IMG/facebook-w-icon.png">
+                <img src="IMG/instagram-w-icon.png">
+                <img src="IMG/telegram-w-icon.png">
+                <img src="IMG/viber-w-icon.png">
+                <img src="IMG/youtube-w-icon.png">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- test code -->
+
 
 <!-- jQuery library -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 <script src="JS/main.js"></script>
 </body>
 </html>

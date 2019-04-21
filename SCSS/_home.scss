@@ -425,14 +425,41 @@
     }
     form.order-request {
       display: flex;
+      justify-content: center;
       input{
-        padding: 9px 18px;
         outline: none;
         @include text(14px,400,20px,$header_color,$ff-text);
+        padding: 3px;
+        text-indent: 9px;
+        border: 1px solid #c4c4c4;
         &[name="name"]{
-         border-radius: 50px 0 0 50px;
-          border:1px solid $header_color
+          border-radius:50px 0 0 50px;
+          width: 114px;
         }
+        &[name="email"]{
+          width:169px;
+        }
+        &[name="phone"]{
+          width: 194px;
+        }
+
+      }
+      input.submit-btn{
+        background-color: $yellow_btn;
+        @include text(14px,400,22px,$black,$ff-text);
+        border:none;
+        padding: 3px 24px;
+        text-indent: inherit;
+        -webkit-border-radius: 0 50px 50px 0;
+        -moz-border-radius: 0 50px 50px 0;
+        border-radius: 0 50px 50px 0;
+        cursor:pointer;
+        transition: all .3s ease;
+        &:hover{
+          background-color: $bordo_btn;
+          color:$white;
+        }
+
       }
     }
   }

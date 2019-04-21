@@ -586,18 +586,43 @@ p {
     text-transform: uppercase;
     text-align: center; }
   .prods .order_new form.order-request {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .prods .order_new form.order-request input {
-      padding: 9px 18px;
       outline: none;
       font-family: PT Sans, sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
-      color: #C4C4C4; }
+      color: #C4C4C4;
+      padding: 3px;
+      text-indent: 9px;
+      border: 1px solid #c4c4c4; }
       .prods .order_new form.order-request input[name="name"] {
         border-radius: 50px 0 0 50px;
-        border: 1px solid #C4C4C4; }
+        width: 114px; }
+      .prods .order_new form.order-request input[name="email"] {
+        width: 169px; }
+      .prods .order_new form.order-request input[name="phone"] {
+        width: 194px; }
+    .prods .order_new form.order-request input.submit-btn {
+      background-color: #FEDA03;
+      font-family: PT Sans, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #000;
+      border: none;
+      padding: 3px 24px;
+      text-indent: inherit;
+      -webkit-border-radius: 0 50px 50px 0;
+      -moz-border-radius: 0 50px 50px 0;
+      border-radius: 0 50px 50px 0;
+      cursor: pointer;
+      transition: all .3s ease; }
+      .prods .order_new form.order-request input.submit-btn:hover {
+        background-color: #853D51;
+        color: #fff; }
 
 @media (max-width: 1200px) {
   .header {

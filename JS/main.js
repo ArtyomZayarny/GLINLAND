@@ -42,4 +42,12 @@ $(document).ready(function(){
     //     variableWidth: true,
     //     variableHeight: true
     // });
+
+
+    $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "img/photo2.jpg",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+    });
 });

@@ -1,0 +1,401 @@
+/* first */
+.page1 {
+    width: 100%;
+    padding: 40px 0;
+}
+.page1 .gallery {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery a{
+    display: block;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.gallery a:before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url('../IMG/eye-icon.png')no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.gallery a:before:hover{
+    visibility: visible;
+}
+
+.page1 .header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.page1 a {
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #853d51;
+    padding: 15px 30px 15px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+
+}
+.page1 .btn-area {
+    text-align: center;
+
+}
+.page1 a:hover {
+    background-color: #FEDA03;
+    color: black;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+}
+.page1 h2 {
+    font-family: 'PT Mono', sans-serif;
+    color: #7691b9;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    line-height: 42px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.page1 h3 {
+    font-family: 'PT Mono', sans-serif;
+    color: #7691b9;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    line-height:30px;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+/*.page1 .header h4 {
+  font-family: 'PT Mono', sans-serif;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  line-height: 35px;
+  margin: 0;
+}*/
+.page1 .float {
+    text-align:center;
+    padding: 40px 0;
+}
+.page1 .float h4 {
+    font-family: 'PT Mono', sans-serif;
+    color: #7691b9;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.page1 .gallery img {
+    width: 113%;
+    height: 325px;
+
+}
+.page1 .gallery-item p {
+    text-align: center;
+    height: 58px;
+    color: #282828;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.page1 .gallery-item {
+    width:30%;
+}
+.gallery-img{
+    margin-bottom: 25px;
+}
+.page1 .gallery-item:nth-child(3) {
+    padding-right: 0;
+}
+.page1 .gallery-text {
+    padding: 0 55px;
+}
+/* first */
+/******************************** FOOTER ************************************/
+.footer {
+    margin-top: 75px;
+    width: 100%;
+    height: 131px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+.footer .block1 {
+    background-color: #282828;
+    width: 9.375%;
+    height: 100%;
+    margin-right: 1px;
+    text-align: center;
+}
+.footer .block2 {
+    background-color: #282828;
+    width: 50.57%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+.footer .block3 {
+    background-color: #282828;
+    width: 40%;
+    height: 100%;
+}
+.footer .block1 h2 {
+    font-family: 'PT Mono', sans-serif;
+    color: #939393;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    line-height: 25px;
+    margin: 42px auto;
+}
+.footer .block2 .text-block {
+    padding: 23px 450px;
+    margin-left: -225px;
+}
+
+.footer .block2 h2 {
+    font-family: 'PT Mono', sans-serif;
+    color: #939393;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    line-height: 15px;
+    text-align: center;
+}
+.footer .block3 .pic2 h2 {
+    font-family: 'PT Mono', sans-serif;
+    color: #939393;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3.4px;
+    line-height: 25px;
+    margin-top: 21px;
+    text-align: center;
+}
+.footer .block3 .pic2 .images {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .block2 .pic {
+    margin-top: -238px;
+    margin-left: 620px;
+}
+.footer .block3 .pic2 .images img {
+    margin: 0 6px;
+}
+/******************************** FOOTER ************************************/
+
+/******************************8 SECTION 2 ***************************/
+.section2 {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 85px 0;
+}
+.section2 .header {
+    width: 1180px;
+    margin: 0 auto;
+}
+.section2 h2 {
+    text-align: center;
+    font-family: 'PT Mono', sans-serif;
+    color: #7691b9;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+.section2 .gallery {
+    margin: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.section2 .gallery img{
+    width: 220px;
+    padding: 0px;
+    height: 220px;
+}
+.section2 .stymit {
+   font-family: 'PT Sans', sans-serif;;
+    width: 170px;
+    height: 34px;
+    border-radius: 15px;
+    border:none;
+    background-color: #853D51;
+    margin-top: 30px;
+    color:#fff;
+}
+.section2 input.stymit{
+    outline: none   ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.section2 input.stymit:hover {
+    background-color: #feda03;
+    color: black;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+}
+.section2 p {
+    text-align: center;
+}
+
+/******************************8 SECTION 2 ***************************/
+
+/******************************** SECTION 3 **************************************/
+.section3 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1180px;
+    padding: 85px 0;
+}
+
+.section3 .container {
+    width: 1180px;
+    margin: 0 30px;
+}
+
+.section3 h2 {
+    font-family: 'PT Mono', sans-serif;
+    color: #7691b9;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+
+.section3 .main {
+    display: flex;
+}
+
+.section3 .main2 {
+    padding-left: 100px;
+}
+
+.section3 .shadow {
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+}
+
+.section3 p {
+    width: 570px;
+    height: 26px;
+    color: #282828;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 21px;
+    margin: 0px;
+    margin-bottom: 23px;
+}
+
+.section3 .stymit {
+    width: 170px;
+    height: 34px;
+    border-radius: 15px;
+    border:none;
+    background-color: #feda03;
+    margin-top: 30px;
+}
+
+.section3 .header {
+    text-align: center;
+}
+
+.section3 p.stinput input {
+    width: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    padding-top: 8px;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    color: #c4c4c4;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section3 select {
+    width: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    padding-top: 8px;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    color: #c4c4c4;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section3 form input[type="text"]::-webkit-input-placeholder{
+    color: #c4c4c4;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section3 input.stymit{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section3 input.stymit:hover {
+    background-color: #853D51;
+    color: white;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+}
+
+.section3 p.stinput input.calendar {
+    width: 364px;
+}
+.section3 .obb {
+    display: flex;
+}
+
+.section3 p.stinput.klas {
+    width: 364px;
+    display: flex;
+    align-items: center;
+}
+
+.section3 a {
+    cursor: pointer;
+}
+.section3 img.ui-datepicker-trigger {
+    width: 44px;
+    height: 44px;
+}
+
+
+.section3 .header2 {
+    text-align: center;
+}

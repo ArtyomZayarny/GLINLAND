@@ -37,7 +37,12 @@
         } 
         i.fa.fa-youtube{font-size: 18px;}
       }
-      .circle.telegram{ @include socialBtnIcon('\f3fe');}
+      .circle.telegram{ @include socialBtnIcon('\f3fe');
+      &:before{
+        position: relative;
+        left: -1px;
+      }
+      }
       .circle.facebook{ @include socialBtnIcon('\f39e');}
       .circle.instagram{@include socialBtnIcon('\f16d');}
       .circle.viber{@include socialBtnIcon('\f409');}
@@ -466,6 +471,7 @@
 
 }
 
+
 @media(max-width: 1200px){
   .header{
     width: 100%;
@@ -494,7 +500,37 @@
     }
 
    &_phones{margin-bottom: 15px;}
-  
+
+  }
+  .section3{
+     .container{
+       width: 100%;
+       margin: 0;
+     }
+    p{
+      width: 100%;
+    }
+    .main{
+      width: 100%;
+    }
+    .main2{
+      padding-left: 2%;
+    }
+
+  }
+  .page1{
+    .gallery {
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+  }
+  .section2{
+
+    .header{
+      width:100%;
+    }
   }
 }
 @media(max-width: 1024px){
@@ -517,15 +553,25 @@
     
       .header_nav{
       display: grid;
-      grid-template-columns:1fr 1fr 274px 1fr 1fr;
+      grid-template-columns:1fr 1fr 173px 1fr 1fr;
       grid-template-rows:1fr 1fr;
-      .about{grid-column: 1/2;}
-     .services{grid-column: 2/3;position: relative;left: -26px;}
+        grid-gap: 7px 0;
+      .about{
+        grid-column: 1/2;
+        justify-self:center;
+      }
+     .services{grid-column: 2/3;
+       justify-self:center;
+     }
      .show-room{grid-column: 1/2;justify-self: center}
       .time{grid-column: 2/3;justify-self: center}
-      .interest{grid-column: 4/5;grid-row: 1;}
-      .news{grid-column: 5/6; grid-row: 1;position: relative;left: -13px;}
-      .contacts{grid-column: 4/5;justify-self: end;}
+      .interest{grid-column: 4/5;grid-row: 1;
+       justify-self:center;
+      }
+      .news{grid-column: 5/6; grid-row: 1;
+          justify-self:center;
+      }
+      .contacts{grid-column: 4/5;justify-self: center;}
       .gallery{grid-column: 5/6;justify-self: center}
     }
   }
@@ -566,18 +612,17 @@
     .header_bottom{
         padding: 15px 15px;
       .header_nav{
-        display: grid;
-        grid-template-columns:repeat(4,1fr);
+
         a{
           letter-spacing: 1px;
         }
-     .services{grid-column: 2/3;position: relative;left: 0;}
+     /*.services{grid-column: 2/3;position: relative;left: 0;}
      .show-room{grid-column: 1/2;justify-self: end}
       .time{grid-column: 2/3; justify-self: end;}
       .interest{grid-column: 3/4;grid-row: 1;}
       .news{grid-column: 4/5; grid-row: 1;position: relative;left:0;}
       .contacts{grid-column: 3/4;justify-self:end;}
-      .gallery{grid-column: 4/5;justify-self:end;}
+      .gallery{grid-column: 4/5;justify-self:end;}*/
         
         
         .devider{
@@ -585,7 +630,6 @@
         }
       }
     }
-  .logo{display: none;}
   &_phones{margin-bottom: 10px;align-self: end}
   &_btn{align-self: start;}
   &_socials{align-self: end;margin-bottom: 10px;}
@@ -744,6 +788,7 @@
     height: calc(100vh - 214px);
     padding: 0;
     display: flex;
+    margin-bottom: 20px;
     &_content{
       display: flex;
       align-items: center;
@@ -785,6 +830,76 @@
       }
     }
   }
+  .main1 {
+    display: none;
+  }
+  .page1{
+    h3{
+      padding-bottom: 0;
+    }
+    h2{
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: inherit;
+    }
+     .gallery{
+       flex-wrap: wrap;
+       width: 100%;
+       &-item{
+         width: 100%;
+       }
+
+     }
+  }
+  .main2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .submit-box{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .section2{
+    padding: 20px 15px;
+    h2{
+      font-size: 20px;
+    }
+    .gallery{
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      img{
+        width: 180px;
+        padding: 0px;
+        height: 180px;
+        overflow: hidden;
+      }
+      div{
+        width: 48%;
+        &:nth-child(2n){
+          margin-left: 2%;
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+  .section3{
+    .header{
+      margin-bottom:20px ;
+    }
+    h2 {
+      margin: 0;
+      line-height: 30px;
+      font-size: 20px;
+    }
+    p.stinput input.calendar{
+      width: 100%;
+    }
+
+  }
+
 }
 @media(max-width:375px){
   .header{

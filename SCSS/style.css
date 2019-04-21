@@ -131,8 +131,8 @@ p {
   left: 0;
   width: 20px;
   height: 20px;
-  content: 'тАв';
-  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
+  content: '•';
+  /* <-- Вот этот символ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -930,7 +930,26 @@ p {
     line-height: 30px;
     font-size: 20px; }
   .section3 p.stinput input.calendar {
-    width: 100%; } }
+    width: 100%; }
+
+  footer {
+    background: #000; }
+
+  .footer-box {
+    grid-template-columns: 1fr; }
+
+  .footer .block1 {
+    order: 1;
+    justify-self: center;
+    padding: 2px 0; }
+  .footer .header_socials {
+    width: 100%;
+    align-self: center; }
+  .footer .block2 .text-block {
+    width: 100%;
+    padding: 20px 0; }
+  .footer .pic {
+    display: none; } }
 @media (max-width: 375px) {
   .header_phones {
     display: block;

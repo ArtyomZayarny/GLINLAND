@@ -899,6 +899,32 @@
     }
 
   }
+  footer{
+    background: #000;
+  }
+.footer-box {
+  grid-template-columns: 1fr;
+}
+  .footer{
+    .block1{
+      order: 1;
+      justify-self: center;
+      padding: 2px 0;
+    }
+    .header_socials{
+      width: 100%;
+      align-self: center;
+    }
+    .block2{
+       .text-block{
+         width: 100%;
+         padding: 20px 0;
+       }
+    }
+    .pic{
+      display: none;
+    }
+  }
 
 }
 @media(max-width:375px){

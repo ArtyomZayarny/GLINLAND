@@ -632,7 +632,8 @@
 .header{
 
   .logo{
-    width: 160px;
+    top: 24px;
+    width: 216px;
     left: calc(100% - 62%);
   }
   .header_btn .btn {
@@ -665,10 +666,20 @@
         }
       }
     }
-  &_phones{margin-bottom: 10px;align-self: end}
+  &_phones{
+    margin-bottom: 10px;
+    align-self: end;
+    span{
+      font-size: 14px;
+    }
+  }
   &_btn{align-self: start;}
   &_socials{align-self: end;margin-bottom: 10px;}
-  &_schedule{align-self: start;}
+  &_schedule{align-self: start;
+  span{
+    font-size: 14px;
+  }
+  }
 
 }
 .hero{
@@ -708,6 +719,14 @@
       }
     }
   }
+
+  .additional{
+    &_title{
+      h3{
+        font-size: 24px;
+      }
+    }
+  }
   .footer-box {
     grid-template-columns: 170px 1fr 1fr;;
   }
@@ -729,11 +748,48 @@
   }
 
 }
+@media(max-width:680px){
+  .header{
+
+    .logo{
+      left: calc(100% - 66%);
+    }
+    .header_bottom{
+      .header_nav_links{
+        font-size: 13px;
+      }
+    }
+  }
+}
 @media(max-width: 575px){
   .header{
     .logo{
-      top:50px;
+      width: 100px;
+      top: 94px;
+      left: calc(100% - 61%);
     }
+    .header_top_content {
+      padding: 0;
+      grid-template-columns: 1fr 1fr;
+
+      .header_socials{
+        grid-column: 2/3;
+        align-self: baseline;
+        padding-top: 4%;
+      }
+      .header_schedule{
+        grid-column:2/3;
+      }
+
+    }
+    &_phones{
+      width: 100%;
+    }
+    .header_phones{
+      text-align: center;
+    }
+
+
     .header_bottom .header_nav {
       display: grid;
       grid-template-columns: 1fr 1fr 130px 1fr 1fr;
@@ -743,7 +799,7 @@
     }
     .logo.stuck {
       position: fixed;
-      width: 113px;
+      width: 100px;
       top: 0;
       left: calc(100% - 60%);
     }
@@ -781,6 +837,15 @@
           span{
             font-size: 32px;
           }
+        }
+      }
+    }
+  }
+  .additional{
+    &_slider{
+      &_item{
+        &-text{
+          padding: 0;
         }
       }
     }
@@ -831,10 +896,13 @@
 }
 @media(max-width: 425px){
   .header{
+    .logo{
+      left: calc(100% - 60%);
+    }
     .header_top{
           max-height: 154px;
       &_content{
-        grid-template-columns: 1fr 100px 1fr;
+        grid-template-columns: 1fr 1fr;
       .devider {
         padding-top: 20px;
       }
@@ -883,17 +951,36 @@
       font-size: 11px;
     }
     .header_bottom{
-          padding: 10px 5px;
           .header_nav_links{
-            font-size: 13px;
+            font-size: 12px;
           }
           .header_nav{
-             grid-gap: 6px 12px;
+            grid-template-columns: 1fr 1fr 80px 1fr 1fr;
+             grid-gap: 0 6px;
           .time{justify-self:start;}
             a.header_nav_links{
+
               justify-self: center;
+              &.news{
+                justify-self:end;
+              }
+              &.gallery{
+                justify-self: end;
+              }
+              &.about{
+                justify-self: start;
+              }
+              &.interest{}
+              justify-self: end;
             }
+
         }
+
+    }
+    .header_bottom.sticky{
+      .header_nav{
+        padding: 0 1%;
+      }
 
     }
   }
@@ -1045,14 +1132,21 @@
 }
 @media(max-width:375px){
   .header{
+    .header_top_content {
+      grid-template-columns: 1fr 1fr;
+    }
     &_phones{
       display: block;
       margin-bottom: 0;
      text-align: center;
       span{
-        font-size: 8px;
+        margin-bottom: 4px;
+        font-size: 12px;
         line-height: 11px;
-        display: inline-block;
+        display: block;
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
     .header_phones{
@@ -1080,10 +1174,12 @@
       display: block;
     }
     .header_schedule span{
-      font-size: 8px;
+      font-size: 12px;
     }
      .header_bottom {
        .header_nav{
+         grid-template-columns: 1fr 1fr 80px 1fr 1fr;
+         grid-gap: 0 6px;
        &_links {
          font-size: 10px;
        }
@@ -1110,6 +1206,32 @@
 }
 @media(max-width:320px){
   .header{
+    .logo{
+      left: calc(100% - 63%);
+    }
+    .header_top_content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    .header_bottom{
+      padding: 15px 1%;
+      .header_nav{
+        grid-template-columns: 1fr 1fr 70px 1fr 1fr;
+        padding: 0;
+        grid-gap:0 6px;
+        &_links{
+          font-size: 8px;
+        }
+      }
+    }
+  .header_bottom.sticky{
+    .header_nav{
+      padding: 0;
+      grid-gap:0;
+    }
+  }
 
   }
+
 }

@@ -764,9 +764,9 @@
 @media(max-width: 575px){
   .header{
     .logo{
-      width: 100px;
+      width: 160px;
       top: 94px;
-      left: calc(100% - 61%);
+      left: calc(100% - 63%);
     }
     .header_top_content {
       padding: 0;
@@ -799,7 +799,7 @@
     }
     .logo.stuck {
       position: fixed;
-      width: 100px;
+      width: 115px;
       top: 0;
       left: calc(100% - 60%);
     }
@@ -894,10 +894,20 @@
     padding: 20px 0;
   }
 }
+@media(max-width:480px){
+  .header{
+
+    .logo{
+      left: calc(100% - 66%);
+    }
+  }
+}
 @media(max-width: 425px){
   .header{
     .logo{
-      left: calc(100% - 60%);
+      width: 120px;
+      top: 94px;
+      left: calc(100% - 63%);
     }
     .header_top{
           max-height: 154px;
@@ -952,7 +962,7 @@
     }
     .header_bottom{
           .header_nav_links{
-            font-size: 12px;
+            font-size: 8px;
           }
           .header_nav{
             grid-template-columns: 1fr 1fr 80px 1fr 1fr;
@@ -970,12 +980,18 @@
               &.about{
                 justify-self: start;
               }
-              &.interest{}
-              justify-self: end;
+              &.interest{justify-self: center;}
+
+              &.show-room{
+                justify-self:start;
+              }
             }
 
         }
 
+    }
+    .header .logo.stuck {
+      left: calc(100% - 62%);
     }
     .header_bottom.sticky{
       .header_nav{
@@ -1132,6 +1148,9 @@
 }
 @media(max-width:375px){
   .header{
+    .logo{
+      width: 100px;
+    }
     .header_top_content {
       grid-template-columns: 1fr 1fr;
     }
@@ -1181,10 +1200,15 @@
          grid-template-columns: 1fr 1fr 80px 1fr 1fr;
          grid-gap: 0 6px;
        &_links {
-         font-size: 10px;
+         font-size: 8px;
        }
      }
     }
+    .logo.stuck {
+      width: 100px;
+      left: calc(100% - 63%);
+    }
+
   }
   .studio-master{
     &-box{
@@ -1231,6 +1255,10 @@
       grid-gap:0;
     }
   }
+    .logo.stuck {
+      width: 100px;
+      left: calc(100% - 65%);
+    }
 
   }
 

@@ -14,9 +14,10 @@ function myFunction() {
     }
 }
 $(document).ready(function(){
-    $('.main-carousel').flickity({
+    $('.additional_slider').flickity({
         // options
-        cellAlign: 'left',
+        //fullscreen: true,
+       // cellAlign: 'left',
         contain: true
     });
 

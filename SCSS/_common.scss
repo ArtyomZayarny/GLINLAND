@@ -39,6 +39,69 @@ section{
 .devider{
   width:274px;
 }
+
+/* Slider button*/
+
+.additional_slider button[aria-label="Next"]
+{
+  background: rgba(118,145,185,0.7);
+}
+.additional_slider button[aria-label="Previous"] {
+  background: rgba(133,61,81,0.7);
+}
+.additional_slider button[aria-label="Next"],
+.additional_slider button[aria-label="Previous"]{
+  opacity: 1;
+  width: 82px;
+  height: 82px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.additional_slider button[aria-label="Next"] svg,
+.additional_slider button[aria-label="Previous"] svg{
+  display: none;
+}
+.additional_slider button[aria-label="Next"]:after,
+.additional_slider button[aria-label="Previous"]:after{
+  content:'';
+  width: 18px;
+  height: 33px;
+  position: absolute;
+}
+.additional_slider button[aria-label="Previous"]:after{
+  left: 30px;
+}
+.additional_slider button[aria-label="Next"]:after{
+  left:36px;
+}
+
+.additional_slider button[aria-label="Next"]:after{
+  background: url('../IMG/Vector.png')no-repeat center;
+}
+.additional_slider button[aria-label="Previous"]:after{
+  background: url('../IMG/vector_left.png')no-repeat center;
+ }
+
+.additional_slider .flickity-page-dots .dot{
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  margin: 0 12px;
+  background: #c4c4c4;
+  border-radius: 50px;
+}
+.additional_slider .flickity-page-dots .dot.is-selected {
+  opacity: 1;
+  background: #fff;
+  border: 3px solid #c4c4c4;
+}
+.additional_slider .flickity-page-dots {
+  bottom: 22px;
+}
+
+/* ************************ */
 @media(max-width: 1200px){
   .container {
     max-width: 100%;

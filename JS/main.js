@@ -18,8 +18,19 @@ $(document).ready(function(){
         // options
         //fullscreen: true,
        // cellAlign: 'left',
+        freeScroll: true,
+        wrapAround: true,
         contain: true
     });
+    $('.prods_slider').flickity({
+        // options
+        //fullscreen: true,
+       // cellAlign: 'left',
+        freeScroll: true,
+        wrapAround: true,
+        contain: true
+    });
+
 
     // $('.events_slider').slick({
     //     dots: true,

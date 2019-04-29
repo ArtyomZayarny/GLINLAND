@@ -30,36 +30,17 @@ $(document).ready(function(){
         wrapAround: true,
         contain: true
     });
+    $('.studio_slider').flickity({
+        freeScroll: true,
+        wrapAround: true,
+        contain: true
+    });
+    $('.events_slider').flickity({
 
-
-    // $('.events_slider').slick({
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 300,
-    //     slidesToShow: 1,
-    //     centerMode: true,
-    //     variableWidth: true
-    // });
-    // $('.studio_slider').slick({
-    //     dots:true,
-    //     centerMode: true,
-    //     slidesToShow: 3,
-    //     arrows: true,
-    //     variableWidth: true,
-    //
-    // });
-    // //additional_slider
-    // // $('.additional_slider').slick({
-    // //     centerMode:true,
-    // //     slidesToShow: 1,
-    // //     slidesToScroll: 1,
-    // //     dots: true,
-    // //     infinite: true,
-    // //     cssEase: 'linear',
-    // //     variableWidth: true,
-    // //     variableHeight: true
-    // // });
-
+        freeScroll: true,
+        wrapAround: true,
+        contain: true
+    });
 
     $( "#datepicker" ).datepicker({
         showOn: "button",

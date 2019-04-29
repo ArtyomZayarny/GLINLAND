@@ -111,6 +111,8 @@
   &_title{
     @include text(24px,700,25px,$blueTitle,$ff-title);
     text-transform: uppercase;
+    padding-bottom: 50px;
+
   }
   &_silder{
 
@@ -263,8 +265,11 @@
     max-width: 100%;
     &_item{
     width: 365px;
-    display: flex;
-    flex-wrap: wrap;
+
+      display: flex;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
       padding-bottom: 35px;
       box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
 
@@ -397,9 +402,12 @@
   &_slider{
     &_item{
       max-width: 370px;
+      min-width:370px;
+      margin-right: 28px;
       box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
       padding-bottom: 27px;
       padding-top: 32px;
+      margin-bottom: 10px;
       &_action{
         display: flex;
         margin-top:20px;

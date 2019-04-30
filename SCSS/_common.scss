@@ -171,10 +171,17 @@ section{
 
 
 .prods_slider .flickity-prev-next-button.next {
-  right: -110px;
+  right: -82px;
 }
 .prods_slider .flickity-prev-next-button.previous {
-  left: -110px;
+  left: -82px;
+}
+@media(max-width:425px){
+  .prods_slider .flickity-prev-next-button.next,
+  .prods_slider .flickity-prev-next-button.previous
+  {
+    display: none;
+  }
 }
 
 .additional_slider .flickity-page-dots .dot,

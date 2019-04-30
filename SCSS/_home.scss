@@ -108,11 +108,15 @@
   }
 }
 .events{
-  position: relative;
+  .event-top-wrap{
+    position: relative;
+  }
   &-top{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     position: absolute;
-    top:0;
+    top:-26px;
     left:0;
     p{
 
@@ -121,7 +125,7 @@
     .left{
       display: inline-block;
       transform: rotate(25deg);
-      padding-left: 4%;
+      margin-left: 4%;
 
       &:before{
         content: "";
@@ -132,13 +136,13 @@
         display: block;
         margin: 0 auto;
         position: absolute;
-        bottom: 0;
-        top: 50px;
+        left: 42px;
+        top: 61px;
         transform: rotate(-25deg);
       }
     }
     .right{
-      padding-right: 4%;
+      margin-right: 4%;
       transform: rotate(-25deg);
       display: inline-block;
       .next{
@@ -1175,6 +1179,15 @@
       width: 100%;
     }
 
+  }
+  .events-top {
+    display: none;
+  }
+  .prods .order_new form.order-request{
+    flex-direction: column;
+    input{
+      width: 100%;
+    }
   }
   footer{
     background: #000;

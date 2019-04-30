@@ -162,11 +162,15 @@ section {
   background: unset; }
 
 .prods_slider .flickity-prev-next-button.next {
-  right: -110px; }
+  right: -82px; }
 
 .prods_slider .flickity-prev-next-button.previous {
-  left: -110px; }
+  left: -82px; }
 
+@media (max-width: 425px) {
+  .prods_slider .flickity-prev-next-button.next,
+  .prods_slider .flickity-prev-next-button.previous {
+    display: none; } }
 .additional_slider .flickity-page-dots .dot,
 .prods_slider .flickity-page-dots .dot {
   opacity: 1;
@@ -272,8 +276,8 @@ p {
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
-  /* <-- Вот этот символ */
+  content: 'тАв';
+  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -417,64 +421,66 @@ p {
   .hero_content .btn {
     padding: 7px 60px; }
 
-.events {
+.events .event-top-wrap {
   position: relative; }
-  .events-top {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .events-top p {
-      font-family: Marck Script, cursive;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 42px;
-      color: #282828; }
-    .events-top .left {
-      display: inline-block;
-      transform: rotate(25deg);
-      padding-left: 4%; }
-      .events-top .left:before {
-        content: "";
-        width: 60px;
-        height: 56px;
-        background: url(../IMG/prev_arrow.png) no-repeat center;
-        background-size: cover;
-        display: block;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 0;
-        top: 50px;
-        transform: rotate(-25deg); }
-    .events-top .right {
-      padding-right: 4%;
-      transform: rotate(-25deg);
-      display: inline-block; }
-      .events-top .right .next:after {
-        top: 49px;
-        content: "";
-        width: 60px;
-        height: 56px;
-        background: url(../IMG/next_arrow.png) no-repeat center;
-        background-size: cover;
-        display: block;
-        margin: 0 auto;
-        position: absolute;
-        left: 34%;
-        right: 0;
-        bottom: 0;
-        transform: rotate(27deg); }
-  .events_title {
-    text-align: center;
-    font-family: PT Mono, monospace;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 25px;
-    color: #7691B9;
-    text-transform: uppercase;
-    padding-bottom: 50px; }
-  .events .slider_item {
-    justify-content: center; }
+.events-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: -26px;
+  left: 0; }
+  .events-top p {
+    font-family: Marck Script, cursive;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #282828; }
+  .events-top .left {
+    display: inline-block;
+    transform: rotate(25deg);
+    margin-left: 4%; }
+    .events-top .left:before {
+      content: "";
+      width: 60px;
+      height: 56px;
+      background: url(../IMG/prev_arrow.png) no-repeat center;
+      background-size: cover;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      left: 42px;
+      top: 61px;
+      transform: rotate(-25deg); }
+  .events-top .right {
+    margin-right: 4%;
+    transform: rotate(-25deg);
+    display: inline-block; }
+    .events-top .right .next:after {
+      top: 49px;
+      content: "";
+      width: 60px;
+      height: 56px;
+      background: url(../IMG/next_arrow.png) no-repeat center;
+      background-size: cover;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      left: 34%;
+      right: 0;
+      bottom: 0;
+      transform: rotate(27deg); }
+.events_title {
+  text-align: center;
+  font-family: PT Mono, monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #7691B9;
+  text-transform: uppercase;
+  padding-bottom: 50px; }
+.events .slider_item {
+  justify-content: center; }
 
 .reasons_title h3 {
   font-family: PT Mono, monospace;
@@ -1282,6 +1288,14 @@ p {
     font-size: 20px; }
   .section3 p.stinput input.calendar {
     width: 100%; }
+
+  .events-top {
+    display: none; }
+
+  .prods .order_new form.order-request {
+    flex-direction: column; }
+    .prods .order_new form.order-request input {
+      width: 100%; }
 
   footer {
     background: #000; }

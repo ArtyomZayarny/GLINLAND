@@ -20,10 +20,6 @@ body {
   margin: 0;
   padding: 0; }
 
-p, span, h1, h2, h3, h4, h5, h6,
-nav a, a.btn {
-  letter-spacing: 1px; }
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
@@ -196,6 +192,54 @@ section {
 .slide:not(.is-selected) {
   opacity: 0.5; }
 
+/********************** ORDER NEW FORM ********************/
+form.order-request {
+  display: flex;
+  justify-content: center; }
+  form.order-request input {
+    outline: none;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #C4C4C4;
+    padding: 3px;
+    text-indent: 9px;
+    border: 1px solid #c4c4c4; }
+    form.order-request input[name="name"] {
+      border-radius: 50px 0 0 50px;
+      width: 114px; }
+    form.order-request input[name="email"] {
+      width: 169px; }
+    form.order-request input[name="phone"] {
+      width: 194px; }
+  form.order-request input.submit-btn {
+    background-color: #FEDA03;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+    border: none;
+    padding: 3px 24px;
+    text-indent: inherit;
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: all .3s ease; }
+    form.order-request input.submit-btn:hover {
+      background-color: #853D51;
+      color: #fff; }
+
+/********************** ORDER NEW FORM ********************/
+/************************* MAP ****************************/
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+/************************* MAP ****************************/
 /* ************************ */
 @media (max-width: 1200px) {
   .container {
@@ -276,8 +320,8 @@ p {
   left: 0;
   width: 20px;
   height: 20px;
-  content: 'тАв';
-  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
+  content: '•';
+  /* <-- Вот этот символ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -801,44 +845,6 @@ p {
     color: #7691B9;
     text-transform: uppercase;
     text-align: center; }
-  .prods .order_new form.order-request {
-    display: flex;
-    justify-content: center; }
-    .prods .order_new form.order-request input {
-      outline: none;
-      font-family: PT Sans, sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      color: #C4C4C4;
-      padding: 3px;
-      text-indent: 9px;
-      border: 1px solid #c4c4c4; }
-      .prods .order_new form.order-request input[name="name"] {
-        border-radius: 50px 0 0 50px;
-        width: 114px; }
-      .prods .order_new form.order-request input[name="email"] {
-        width: 169px; }
-      .prods .order_new form.order-request input[name="phone"] {
-        width: 194px; }
-    .prods .order_new form.order-request input.submit-btn {
-      background-color: #FEDA03;
-      font-family: PT Sans, sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 22px;
-      color: #000;
-      border: none;
-      padding: 3px 24px;
-      text-indent: inherit;
-      -webkit-border-radius: 0 50px 50px 0;
-      -moz-border-radius: 0 50px 50px 0;
-      border-radius: 0 50px 50px 0;
-      cursor: pointer;
-      transition: all .3s ease; }
-      .prods .order_new form.order-request input.submit-btn:hover {
-        background-color: #853D51;
-        color: #fff; }
 
 @media (max-width: 1200px) {
   .header {
@@ -888,7 +894,12 @@ p {
     width: 100%; } }
 @media (max-width: 1024px) {
   .banner-block_text {
-    width: 80%; } }
+    width: 80%; }
+
+  .prods .prods_slider .flickity-prev-next-button.previous {
+    left: 0; }
+  .prods .prods_slider .flickity-prev-next-button.next {
+    right: 0; } }
 @media (max-width: 992px) {
   .header .header_bottom .header_nav {
     display: grid;
@@ -1385,3 +1396,5 @@ p {
     left: calc(100% - 65%); } }
 .slider_item a {
   display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

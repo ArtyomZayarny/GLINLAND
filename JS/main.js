@@ -36,7 +36,7 @@ $(document).ready(function(){
         contain: true
     });
     $('.events_slider').flickity({
-
+      // watchCSS: true,
         freeScroll: true,
         wrapAround: true,
         contain: true
@@ -48,4 +48,8 @@ $(document).ready(function(){
         buttonImageOnly: true,
         buttonText: "Select date"
     });
+
+    /******************** GOOGLE MAP ********************/
+
+
 });

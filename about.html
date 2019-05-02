@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GLINLAND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome 5.8 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- font -awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+
+    <!-- jQuery Ui css -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="SCSS/lightbox.min.css">
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="SCSS/main_sectin.css">
+    <link rel="stylesheet" href="SCSS/style.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_content">
+                <div class="header_phones">
+                    <span>+38 093 002 09 06</span>
+                    <span>+38 093 030 12 00</span></div>
+                <div class="header_btn">
+                    <a href="#" class="btn subscr">Записаться</a>
+                </div>
+                <div class="devider">
+                    <img src="IMG/logo.png">
+                </div>
+                <div class="header_schedule">
+                    <span class="schedule">Пн - Вс:</span>
+                    <span class="schedue">10:00 - 21:00</span></div>
+                <div class="header_socials">
+                    <a href="#" class="circle facebook"></a>
+                    <a href="#" class="circle instagram"></a>
+                    <a href="#" class="circle telegram"></a>
+                    <a href="#" class="circle viber"></a>
+                    <a href="#" class="circle"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="header-nav" class="header_bottom">
+        <div class="container">
+            <nav class="header_nav">
+                <a href="#" class="header_nav_links about">О нас</a>
+                <a href="#" class="header_nav_links services">Услуги</a>
+                <a href="#" class="header_nav_links show-room">Мастерская</a>
+                <a href="#" class="header_nav_links time">Расписание</a>
+                <div class="devider"></div>
+                <a href="#" class="header_nav_links interest">Полезное</a>
+                <a href="#" class="header_nav_links news">Новости</a>
+                <a href="#" class="header_nav_links contacts">Контакты</a>
+                <a href="#" class="header_nav_links gallery">Галерея</a>
+            </nav>
+        </div>
+    </div>
+    <div id="logo" class="logo">
+        <img src="IMG/logo.png">
+    </div>
+
+</header>
+<div class="about_hero">
+    <h2>О нас</h2>
+</div>
+<section class="vizit_us">
+    <h3 class="blue-title">ПРИХОДИТЕ К НАМ - НЕ ПОЖАЛЕЕТЕ!</h3>
+    <div class="place">
+        <h4>Гончарная студия Glinland</h4>
+        <p>Студия гончарства и керамики, которая расположена в самом большом
+            спальном районе Одессы по адресу ул. Ак. Сахарова, 36 (Изумрудный город).</p>
+        <p>Возраст наших учеников – от 3 лет.</p>
+    </div>
+    <div class="tel">
+        <span>+38 093 030 12 00</span>
+    </div>
+    <div class="address">
+        <p>ул. Ак. Сахарова, 36 (Изумрудный город)</p>
+    </div>
+    <form action="" class="order-request">
+        <p><input name="name" type="text" placeholder="Имя" required/></p>
+        <p><input name="email" type="email" placeholder="E-mail" required/></p>
+        <p><input name="phone" type="text" placeholder="+3 8 (000) 000 00 00" required/></p>
+        <p><input class="submit-btn" type="submit" value="Заказать"/></p>
+    </form>
+
+    <div class="map-box">
+        <div id="map"></div>
+    </div>
+</section>
+<aection class="our_masters">
+    <h3 class="blue-title">НАШИ ПРЕПОДАВАТЕЛИ ГОНЧАРНОГО МАСТЕРСТВА</h3>
+    <div class="master odd">
+        <div class="author_img">
+            <img src="IMG/author.png" alt="author">
+        </div>
+        <div class="about_author">
+            <b>Лера</b>
+            <p>У Вас есть дети-подростки, которых, во что бы то ни стало, нужно оторвать от компьютера</p>
+        </div>
+    </div>
+    <div class="master even">
+        <div class="author_img">
+            <img src="IMG/author.png" alt="author">
+        </div>
+        <div class="about_author">
+            <b>Лера</b>
+            <p>У Вас есть дети-подростки, которых, во что бы то ни стало, нужно оторвать от компьютера</p>
+        </div>
+    </div>
+
+</aection>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 46.5775813, lng: 30.8060279};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLOhONZFh7r1yE8JoHz0L8amLolM6WqrA&callback=initMap"></script>
+
+</body>
+</html>

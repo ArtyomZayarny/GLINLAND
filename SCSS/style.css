@@ -40,6 +40,10 @@ a {
 section {
   padding: 40px 0; }
 
+.headings {
+  text-align: center;
+  margin-bottom: 35px; }
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -48,6 +52,25 @@ section {
 .devider {
   width: 274px; }
 
+/***************** HERO Title ********************/
+.hero-title {
+  font-family: PT Mono, monospace;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 100px;
+  color: #fff;
+  text-align: center; }
+
+.blue-title {
+  font-family: PT Mono, monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #7691B9;
+  padding-bottom: 20px;
+  text-transform: uppercase; }
+
+/***************** BLUE TITLE *****************/
 /* Slider button*/
 .additional_slider button[aria-label="Next"],
 .prods_slider button[aria-label="Next"] {
@@ -233,6 +256,11 @@ form.order-request {
       color: #fff; }
 
 /********************** ORDER NEW FORM ********************/
+/********************** HERO BACKGROUND IMG ****************/
+.hero-section {
+  height: calc(100vh - 264px); }
+
+/********************** HERO BACKGROUND IMG ****************/
 /************************* MAP ****************************/
 #map {
   width: 100%;
@@ -320,8 +348,8 @@ p {
   left: 0;
   width: 20px;
   height: 20px;
-  content: 'тАв';
-  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
+  content: '•';
+  /* <-- Вот этот символ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -944,14 +972,6 @@ p {
     grid-template-columns: 1fr 200px 1fr; }
     .footer-box .pic {
       left: calc(100% - 60%); }
-    .footer-box .block1 {
-      grid-column: 1/4;
-      order: 1;
-      text-align: center;
-      width: 100%;
-      justify-self: center;
-      padding: 0px 15px;
-      align-self: center; }
     .footer-box .block2 {
       justify-self: center;
       grid-column: 1/2;
@@ -1308,11 +1328,18 @@ p {
     .prods .order_new form.order-request input {
       width: 100%; }
 
+  .hero-title {
+    font-size: 52px;
+    line-height: 60px; }
+
+  .footer .block3 .pic2 h2 {
+    display: none; }
+
   footer {
     background: #000; }
 
   .footer-box {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 47px 2fr 1fr; }
     .footer-box .block3 {
       width: 100%; }
 
@@ -1393,6 +1420,15 @@ p {
     grid-gap: 0; }
   .header .logo.stuck {
     width: 100px;
-    left: calc(100% - 65%); } }
+    left: calc(100% - 65%); }
+
+  .hero-title {
+    font-size: 52px;
+    line-height: 60px; }
+
+  .footer .block3 .pic2 h2 {
+    display: none; } }
 .slider_item a {
   display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

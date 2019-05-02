@@ -28,6 +28,10 @@ a{
 section{
   padding:40px 0;
 }
+.headings{
+  text-align: center;
+  margin-bottom: 35px;
+}
 .container{
   width: 100%;
   margin: 0 auto;
@@ -36,7 +40,20 @@ section{
 .devider{
   width:274px;
 }
+/***************** HERO Title ********************/
+.hero-title{
+  @include text(96px,400,100px,$white,$ff-title);
+  text-align: center;
+}
 
+
+.blue-title {
+  @include text(24px,700,25px,$blueTitle,$ff-title);
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/***************** BLUE TITLE *****************/
 /* Slider button*/
 
 .additional_slider button[aria-label="Next"],
@@ -213,8 +230,6 @@ section{
 
 
 /********************** ORDER NEW FORM ********************/
-
-
   form.order-request {
     display: flex;
     justify-content: center;
@@ -254,9 +269,14 @@ section{
 
     }
   }
-
 /********************** ORDER NEW FORM ********************/
 
+/********************** HERO BACKGROUND IMG ****************/
+.hero-section {
+  height: calc(100vh - 264px);
+}
+
+/********************** HERO BACKGROUND IMG ****************/
 
 /************************* MAP ****************************/
 #map {

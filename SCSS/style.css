@@ -320,8 +320,8 @@ p {
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
-  /* <-- Вот этот символ */
+  content: 'тАв';
+  /* <-- ╨Т╨╛╤В ╤Н╤В╨╛╤В ╤Б╨╕╨╝╨▓╨╛╨╗ */
   text-align: center;
   opacity: .25;
   color: black;
@@ -1396,5 +1396,3 @@ p {
     left: calc(100% - 65%); } }
 .slider_item a {
   display: inline-block; }
-
-/*# sourceMappingURL=style.css.map */

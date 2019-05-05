@@ -41,6 +41,19 @@ $(document).ready(function(){
         wrapAround: true,
         contain: true
     });
+    $('.latest-news__slider').flickity({
+      // watchCSS: true,
+        freeScroll: true,
+        wrapAround: true,
+        contain: true
+    });
+    $('.announced-slider').flickity({
+      // watchCSS: true,
+        freeScroll: true,
+        wrapAround: true,
+        contain: true
+    });
+
 
     $( "#datepicker" ).datepicker({
         showOn: "button",

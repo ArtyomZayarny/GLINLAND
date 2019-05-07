@@ -364,6 +364,41 @@ p {
   align-items: center;
   justify-content: center; }
 
+/************************** USEFUL POST *****************/
+.post {
+  display: flex;
+  margin-bottom: 42px; }
+  .post__img {
+    margin-right: 15px; }
+  .post__content {
+    max-width: 500px; }
+    .post__content__title {
+      padding: 0 15px; }
+      .post__content__title h3 {
+        font-family: PT Mono, monospace;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px;
+        color: #7691B9;
+        padding-bottom: 25px; }
+    .post__content__text {
+      padding: 0 15px; }
+      .post__content__text p {
+        font-family: PT Sans, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #000;
+        padding-bottom: 25px; }
+    .post__content__btn {
+      padding: 0 15px; }
+      .post__content__btn a {
+        font-family: PT Mono, monospace;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #7691B9; }
+
 @media (max-width: 992px) {
   .section3 .header {
     margin-bottom: 20px; }

@@ -378,6 +378,39 @@ p{
   justify-content: center;
 }
 
+/************************** USEFUL POST *****************/
+.post{
+  display: flex;
+  margin-bottom: 42px;
+  &__img{
+    margin-right: 15px;
+  }
+  &__content{
+    max-width:500px;
+    &__title{
+      padding: 0 15px;
+      h3{
+        @include text(36px,400,40px,$blueTitle,$ff-title);
+        padding-bottom: 25px;
+      }
+    }
+    &__text{
+      padding: 0 15px;
+      p{
+        @include text(14px,400,16px,$black,$ff-text);
+        padding-bottom: 25px;
+      }
+    }
+    &__btn{
+      padding: 0 15px;
+      a{
+        @include text(14px,400,16px,$blueTitle,$ff-title);
+      }
+    }
+  }
+
+}
+
 
 
 @media (max-width: 992px){

@@ -63,6 +63,7 @@ transition: all .3s ease;
 @mixin prodsBtn($btnColor){
   @include text(14px,400,20px,$white,$ff-text);
   background-color: $btnColor;
+  display: block;
   padding: 8px 21px;
   transition:all .3s ease ;
   &:hover{

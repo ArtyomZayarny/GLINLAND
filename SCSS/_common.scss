@@ -338,8 +338,11 @@ section{
   color:#fff;
   background-color: $bordo_btn;
 }
-p{
+p{@include text(14px,400,16px,$black2,$ff-title);}
+p.desc{
   @include text(14px,400,16px,$black2,$ff-title);
+  margin: 0 auto;
+  width: 80%;
 }
 
 

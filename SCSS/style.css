@@ -324,6 +324,15 @@ p {
   line-height: 16px;
   color: #282828; }
 
+p.desc {
+  font-family: PT Mono, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #282828;
+  margin: 0 auto;
+  width: 80%; }
+
 .btn.subscr {
   font-family: PT Sans, sans-serif;
   font-size: 14px;
@@ -890,6 +899,7 @@ p {
         line-height: 20px;
         color: #fff;
         background-color: #ff6b00;
+        display: block;
         padding: 8px 21px;
         transition: all 0.3s ease;
         border-radius: 0 50px 50px 0; }
@@ -908,6 +918,7 @@ p {
         line-height: 20px;
         color: #fff;
         background-color: #000;
+        display: block;
         padding: 8px 21px;
         transition: all 0.3s ease;
         border-radius: 50px 0 0 50px; }
@@ -1499,6 +1510,42 @@ p {
       .latest-news__slider__item-content .btn-area .btn.subscr {
         font-size: 18px;
         padding: 10px 29px; }
+
+.section3 .headings h4.blue-title {
+  font-family: PT Mono, monospace;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #7691B9;
+  padding-bottom: 0;
+  padding-top: 20px; }
+
+.worshop-prods .headings h4 {
+  font-family: PT Mono, monospace;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #7691B9; }
+.worshop-prods__content {
+  display: flex;
+  flex-wrap: wrap; }
+  .worshop-prods__content__item {
+    width: 31%;
+    margin-bottom: 3%;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25); }
+    .worshop-prods__content__item:nth-child(3n+2) {
+      margin: 0 3%;
+      margin-bottom: 3%; }
+    .worshop-prods__content__item .prods_caption {
+      text-align: center;
+      font-family: PT Sans, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000;
+      padding: 5px 0; }
+    .worshop-prods__content__item .prods_slider_item_action {
+      margin-bottom: 20px; }
 
 .slider_item a {
   display: inline-block; }

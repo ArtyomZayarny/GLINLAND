@@ -40,21 +40,23 @@ section{
 .devider{
   width:274px;
 }
-/***************** HERO Title ********************/
+/***************** TITLES ********************/
 .hero-title{
   @include text(96px,400,100px,$white,$ff-title);
   text-align: center;
   text-transform: uppercase;
 }
-
-
 .blue-title {
   @include text(24px,700,25px,$blueTitle,$ff-title);
   padding-bottom: 20px;
   text-transform: uppercase;
 }
+.prods_caption{
+  text-align: center;
+  @include text(18px,400,24px,$black,$ff-text);
+  padding: 5px 0;
 
-/***************** BLUE TITLE *****************/
+}
 /* Slider button*/
 
 .additional_slider button[aria-label="Next"],
@@ -270,27 +272,106 @@ section{
 
     }
   }
-/********************** ORDER NEW FORM ********************/
 
 /********************** HERO BACKGROUND IMG ****************/
 .hero-section {
   height: calc(100vh - 264px);
 }
-
-/********************** HERO BACKGROUND IMG ****************/
-
 /************************* MAP ****************************/
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
 }
+/********************** POPUP  #up-prod ***************************/
+.up-prod__content {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.25);
+}
+.current_slide {
+  width: 370px;
+  position: relative;
+  margin-bottom: 3%;
+}
+.slider_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.up-prod__content__text h4 {
+  text-align: left;
+}
+.up-prod__content__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.slider-btns {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 108%;
+  top:50%;
+  left: -4%;
+}
+.slider_ctrl{
+  width: 46px;
+  align-items: center;
+  display: flex;
+  height: 46px;
+  border-radius: 50px;
+  justify-content: center;
+}
+.slider_ctrl.right{
+  background-color: palevioletred;
+}
+.slider_ctrl.left{
+  background-color: #7691b9;
+}
 
-/************************* MAP ****************************/
+.share_block a.circle{
+  border-color:#000;
+}
+.share_block .header_socials .circle.facebook:before,
+.share_block .header_socials .circle.instagram:before,
+.share_block .header_socials .circle.telegram:before,
+.share_block .header_socials .circle.viber:before,
+.share_block .header_socials .circle i
+{
+  color:#000;
+}
+.share_block {
+  display: flex;
+  align-items: center;
+}
+.share_block span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.up-prod__content__text__bottom .prods_slider_item_action{
+  justify-content: flex-start;
+}
+.up-prod__content__text__bottom  .buy-btn {
+  margin-right: 20px;
+}
+.up-prod__content__text {
+  padding: 0 15px;
+  margin-left: 20px;
+}
+a.close-btn {
+  position: absolute;
+  right: 20px;
+}
 
 
 
-/* ************************ */
+
+
+
+/* *************         MEDIA                  *********** */
 @media(max-width: 1200px){
   .container {
     max-width: 100%;

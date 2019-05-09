@@ -25,16 +25,9 @@
         margin:0 3%;
         margin-bottom: 3%;
       }
-      .prods_caption{
-        text-align: center;
-        @include text(18px,400,24px,$black,$ff-text);
-        padding: 5px 0;
-
-      }
       .prods_slider_item_action{
         margin-bottom: 20px;
       }
-
     }
   }
 }
